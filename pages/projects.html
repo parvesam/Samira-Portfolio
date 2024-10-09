@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Projects | Samira Parveen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #wrapper {
+            width: 100%;
+            position: relative;
+        }
+
+        #main {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 60px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Styling the projects box */
+        #projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin: 20px auto;
+            width: 100%; /* Set the width to 100% to make it long */
+            max-width: 1200px; /* You can adjust this based on your preference */
+            max-height: calc(100vh - 250px); /* Subtract height to leave space for the footer */
+            overflow-y: scroll; /* Enable vertical scrolling */
+            padding: 10px;
+            background-color: transparent; /* Keep background transparent */
+            border: 1px solid #ccc; /* Optional border */
+            border-radius: 8px; /* Rounded corners */
+        }
+        /* Project title styling */
+        h3 {
+            font-weight: bold;
+            color: black;
+            margin: 0;
+        }
+
+        /* Project description styling */
+        p {
+            margin: 5px 0;
+            color: black;
+        }
+
+        /* Footer styling */
+        footer {
+            padding: 10px 0;
+            margin-top: auto;
+            left: 0;
+            right: 0;
+            clear: both;
+            z-index: 1;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        /* Center the buttons */
+        article {
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 5px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+            <header id="header">
+                <h1>Projects</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="projects">   
+                <div class="container">
+                    <article>
+                        <h3>Smart Navigation Guide for Visually Impaired People (Smart Cane)</h3>
+                        <p>Description: A smart cane designed to help visually impaired people navigate safely.</p>
+                        <p>Technologies Used: C Programming, Arduino Uno, Global Positioning System (GPS), and Electronic Components.</p>
+                        <a href="https://www.linkedin.com/in/samira-p-aa4609192/overlay/1711560819301/single-media-viewer/?profileId=ACoAAC1L6twB13apHNjyxWwc5tEp5zl84WIURYQ" class="button">View Project</a>
+                        <a href="https://www.ieeetoronto.ca/2022/05/01/smart-navigation-guide-for-visually-impaired-people-smart-cane/" class="button">View my project on IEEE Website</a>
+                    </article>
+                    <!-- You can duplicate the article block above for more projects -->
+                </div>            
+            </section>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <span class="copyright">&copy; 2024 Samira Parveen. All rights reserved.</span>
+    </footer>
+
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About Me | Samira Parveen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            text-align: center;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full height */
+            margin: 0; /* Reset default margin */
+        }
+        #wrapper {
+            flex: 1; /* Allow wrapper to grow and fill available space */
+            position: relative; /* Position relative to stack elements correctly */
+        }
+
+        #main {
+            position: relative; /* Ensure content appears above overlay */
+            z-index: 2; /* Bring main content above any hidden elements */
+            margin-bottom: 60px; /* Add space for the footer */
+        }
+
+        h3 {
+            font-weight: bold; /* Make certification names bold */
+            color: black; /* Set color to black */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Styling the about section */
+        #about {
+            display: block; /* Make sure it's displayed */
+            margin: 20px auto; /* Center the section */
+            padding: 40px; /* Increase padding for a longer box */
+            background-color: rgba(255, 255, 255, 0.9); /* Light background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+            width: 70%; /* Set width to 70% for medium size */
+            max-width: 600px; /* Set maximum width for medium size */
+            min-height: 150px; /* Set minimum height to make it longer */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Paragraph styling */
+        #about p {
+            color: black; /* Set paragraph color to black */
+            margin: 5px 0; /* Space between paragraphs */
+        }
+
+        /* List styling */
+        #about ul {
+            color: black; /* Set the color of the unordered list */
+            padding-left: 20px; /* Add padding to the left for indentation */
+            list-style-position: outside; /* Ensure bullets are outside the list */
+            list-style-type: disc; /* Display dots */
+        }
+
+        /* List item styling */
+        #about li {
+            color: black; /* Set list item color to black */
+            margin: 5px 0; /* Space between list items */
+        }
+
+        /* Footer styling */
+        footer {
+            padding: 10px 0; /* Padding around footer */
+            position: relative; /* Change to relative for correct positioning */
+            margin-top: auto; /* Push footer to the bottom */
+            left: 0; /* Align to the left */
+            right: 0; /* Align to the right */
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div> <!-- Include this line for the moving background -->
+        <div id="overlay"></div> <!-- Keep overlay if needed for background effect -->
+        <div id="main">
+
+            <header id="header">
+                <h1>About Me</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="about">
+                <p>I am a dedicated computer science student with a passion for cloud computing and cybersecurity.</p>
+                <h3>Education</h3>
+                <p>Bachelor of Computer Science (Cloud Computing), Sheridan College</p>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming Languages: Java, Python, C#, HTML, CSS</li>
+                    <li>Cloud Platforms: AWS, Azure, GCP</li>
+                    <li>Cybersecurity Tools: Wireshark, Kali Linux, Elastic</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <span class="copyright">&copy; 2024 Samira Parveen. All rights reserved.</span>
+    </footer>
+
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+    </script>
+</body>
+</html>

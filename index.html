@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Portfolio | Samira Parveen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ccc;
+        }
+        /* Styling for the image */
+        .profile-image {
+            max-width: 400px; /* Adjusted for a better fit */
+            max-height: 450px; /* Set a maximum height for the image */
+            height: 200px; /* Maintain aspect ratio */
+            border-radius: 15%; /* Adjust to slightly rounded corners */
+            margin: 10px 0; /* Space above and below the image */
+            border: 2px solid white; /* Add a white border around the image */
+        }
+
+        header {
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements horizontally */
+            text-align: center; /* Center text */
+            margin-bottom: 2em; /* Space below the header */
+            padding: 20px; /* Add padding around the header */
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <h1>Samira Parveen</h1>
+                <p>Aspiring Cybersecurity and Cloud Computing Specialist</p>
+                <img src="assets/css/images/samira.jpg" alt="Profile Image" class="profile-image" />
+                <nav>
+                    <ul>
+                        <li><a href="pages/about.html">About Me</a></li>
+                        <li><a href="pages/projects.html">Projects</a></li>
+                        <li><a href="pages/certifications.html">Certifications</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Social Icons -->
+                <nav>
+                    <ul>
+                        <li><a href="https://github.com/parvesam" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+                        <li><a href="https://linkedin.com/in/samira-p-aa4609192" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="mailto:parveesam@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <span class="copyright">&copy; 2024 Samira Parveen. All rights reserved.</span>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+    </script>
+</body>
+</html>
