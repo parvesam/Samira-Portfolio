@@ -18,6 +18,7 @@
         #wrapper {
             flex: 1; /* Allow wrapper to grow and fill available space */
             position: relative; /* Position relative to stack elements correctly */
+            overflow-y: auto; /* Allow vertical scrolling */
         }
 
         #main {
@@ -35,6 +36,8 @@
             padding: 20px; /* Increase padding for a longer box */
             width: 80%; /* Set width to 80% for medium size */
             max-width: 800px; /* Set maximum width for medium size */
+            overflow-y: auto; /* Allow vertical scrolling */
+            max-height: 70vh; /* Limit height for scrollable content */
         }
 
         /* Certification box styling */
@@ -54,6 +57,17 @@
             height: auto; /* Maintain aspect ratio */
             border-radius: 5px; /* Rounded corners for image */
             margin-bottom: 10px; /* Space below the image */
+        }
+
+        /* Header styling */
+        header {
+            margin-bottom: 20px; /* Space below the header */
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Increase the font size for the title */
+            color: white; /* Title color */
+            margin: 20px 0; /* Space above and below the title */
         }
 
         /* Footer styling */
@@ -99,6 +113,7 @@
             font-size: 0.9em; /* Smaller font for date */
             color: black; /* Change to black */
         }
+
     </style>
 </head>
 <body class="is-preload">

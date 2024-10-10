@@ -19,6 +19,7 @@
         #wrapper {
             flex: 1;
             position: relative;
+            overflow-y: auto; /* Allow vertical scrolling */
         }
 
         #main {
@@ -107,6 +108,7 @@
 
             nav ul {
                 gap: 15px;
+                justify-content: center; /* Keep horizontal alignment */
             }
 
             footer {
@@ -127,7 +129,8 @@
 
             nav ul {
                 gap: 10px; /* Smaller gap for mobile */
-                flex-direction: column; /* Stack navigation vertically */
+                justify-content: center; /* Keep horizontal alignment */
+                flex-direction: row; /* Ensure items are in a row */
             }
 
             footer {
