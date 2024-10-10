@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <title>Certifications | Samira Parveen</title>
     <meta charset="utf-8" />
@@ -30,6 +30,7 @@
         #certifications {
             display: flex; /* Use flexbox for layout */
             justify-content: space-around; /* Space between the boxes */
+            flex-wrap: wrap; /* Allow wrapping of boxes */
             margin: 20px auto; /* Center the section */
             padding: 20px; /* Increase padding for a longer box */
             width: 80%; /* Set width to 80% for medium size */
@@ -44,6 +45,7 @@
             padding: 20px; /* Padding inside the box */
             width: 45%; /* Set width to 45% for each box */
             text-align: left; /* Align text to the left */
+            margin: 10px; /* Margin around each box */
         }
 
         /* Image styling */
@@ -62,6 +64,7 @@
             left: 0; /* Align to the left */
             right: 0; /* Align to the right */
         }
+
         nav ul {
             display: flex;
             list-style: none;
@@ -69,29 +72,33 @@
             justify-content: center;
             gap: 20px;
         }
+
         nav ul li {
             display: inline-block;
         }
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
+
         nav ul li a:hover {
             color: #ccc;
         }
-        /* Project title styling */
+
+        /* Certification title styling */
         h3 {
             font-weight: bold;
             color: black;
             margin: 0;
         }
+
         .certification-date {
             font-size: 0.9em; /* Smaller font for date */
             color: black; /* Change to black */
         }
-
     </style>
 </head>
 <body class="is-preload">
