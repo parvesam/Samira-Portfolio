@@ -7,42 +7,102 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+        /* Base Styling for all devices */
         nav ul {
             display: flex;
             list-style: none;
             padding: 0;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
         }
+
         nav ul li {
             display: inline-block;
         }
+
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
+
         nav ul li a:hover {
             color: #ccc;
         }
+
         /* Styling for the image */
         .profile-image {
-            max-width: 400px; /* Adjusted for a better fit */
-            max-height: 450px; /* Set a maximum height for the image */
-            height: 200px; /* Maintain aspect ratio */
-            border-radius: 15%; /* Adjust to slightly rounded corners */
+            max-width: 400px; /* Set a maximum width for larger screens */
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15%; /* Rounded corners */
             margin: 10px 0; /* Space above and below the image */
-            border: 2px solid white; /* Add a white border around the image */
+            border: 2px solid white; /* Add a white border */
         }
 
         header {
-            display: flex; /* Use flexbox */
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center elements horizontally */
-            text-align: center; /* Center text */
-            margin-bottom: 2em; /* Space below the header */
-            padding: 20px; /* Add padding around the header */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2em;
+            padding: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Media query for tablet and smaller screens */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                gap: 15px; /* Reduce space between menu items */
+                flex-direction: column; /* Stack the nav items on mobile */
+            }
+
+            .profile-image {
+                width: 90%; /* Resize image for tablets */
+            }
+
+            footer {
+                font-size: 0.9rem; /* Adjust footer text size for tablets */
+            }
+        }
+
+        /* Media query for mobile screens */
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .profile-image {
+                width: 80%; /* Resize image further for mobile */
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px; /* Less gap between items on mobile */
+            }
+
+            footer {
+                font-size: 0.8rem; /* Smaller footer text on mobile */
+            }
         }
     </style>
 </head>
