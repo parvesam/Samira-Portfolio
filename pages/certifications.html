@@ -114,6 +114,44 @@
             color: black; /* Change to black */
         }
 
+        /* Mobile responsive design */
+        @media screen and (max-width: 768px) {
+            .certification-box {
+                width: 100%; /* Full width for boxes on smaller screens */
+                margin: 10px 0; /* Margin between boxes */
+            }
+
+            #certifications {
+                width: 90%; /* Slightly smaller width for the container on tablets */
+            }
+
+            h1 {
+                font-size: 2rem; /* Adjust font size for the title on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem; /* Adjust font size further for mobile screens */
+            }
+
+            #certifications {
+                width: 100%; /* Full width for the container on mobile */
+            }
+
+            .certification-box {
+                padding: 15px; /* Reduce padding for smaller devices */
+                margin: 10px 0; /* Adjust margin */
+            }
+
+            nav ul {
+                gap: 15px; /* Reduce gap between links on mobile */
+            }
+
+            footer {
+                font-size: 0.8rem; /* Smaller footer font on mobile */
+            }
+        }
     </style>
 </head>
 <body class="is-preload">
