@@ -137,6 +137,9 @@
 
             #certifications {
                 width: 100%; /* Full width for the container on mobile */
+                padding: 10px; /* Adjust padding for smaller screens */
+                max-height: 60vh; /* Reduce max height on mobile to prevent touching the bottom */
+                overflow-y: auto; /* Ensure it stays scrollable */
             }
 
             .certification-box {
@@ -150,6 +153,7 @@
 
             footer {
                 font-size: 0.8rem; /* Smaller footer font on mobile */
+                position: static; /* Ensure footer stays below the content */
             }
         }
     </style>
