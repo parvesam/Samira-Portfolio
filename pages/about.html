@@ -73,13 +73,14 @@
             right: 0;
         }
 
+        /* Horizontal Navbar Styling */
         nav ul {
             display: flex;
+            justify-content: center;
             list-style: none;
             padding: 0;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            margin: 0;
+            gap: 20px; /* Add spacing between links */
         }
 
         nav ul li {
@@ -90,6 +91,7 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 20px;
             transition: color 0.3s ease;
         }
 
@@ -97,22 +99,7 @@
             color: #ccc;
         }
 
-        /* Fix navbar alignment on smaller screens */
-        @media screen and (max-width: 768px) {
-            nav ul {
-                flex-direction: row; /* Force items to stay in a row */
-                gap: 10px; /* Adjust gap for smaller screens */
-                padding: 0;
-                margin: 0;
-            }
-
-            nav ul li {
-                flex: 1; /* Ensure items take up equal space */
-                text-align: center; /* Center align text */
-            }
-        }
-
-        /* Responsive design for mobile screens */
+        /* Adjustments for mobile screens */
         @media screen and (max-width: 480px) {
             h1 {
                 font-size: 1.5rem;
@@ -120,15 +107,13 @@
             }
 
             nav ul {
-                flex-direction: column; /* Stack the menu items vertically */
-                align-items: center;
-                gap: 10px;
-                padding: 0;
+                flex-direction: row; /* Keep the nav items in a horizontal row */
+                justify-content: center;
+                gap: 10px; /* Adjust gap for mobile screens */
             }
 
             nav ul li {
-                width: 100%; /* Make items take full width */
-                text-align: center;
+                flex: 1; /* Make sure links are spaced evenly */
             }
 
             #about {
